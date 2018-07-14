@@ -363,3 +363,17 @@ $(function ($) {
 
 $("img.lazy").lazyload();
 
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+// Usage:
+
+preload([
+    '../Images/overlay-right.png',
+    '../Images/overlay-left.png',
+    '../Images/trongNuoc/sapa2.jpg',
+    '../Images/tim-tour-bg.png',
+]);
