@@ -1,10 +1,10 @@
-// Loadding
-// $(document).ready(function ($) {
-//     $(window).on('load', function () {
-//         $(".loader").fadeOut();
-//     });
-// });
-$('.loader').delay(3000).fadeOut('slow');
+Loadding
+$(document).ready(function ($) {
+    $(window).on('load', function () {
+        $(".loader").fadeOut();
+    });
+});
+// $('.loader').delay(3000).fadeOut('slow');
 
 $(document).ready(function ($) {
     $(".mainMenuMobile .hasArrow").click(function () {
@@ -374,6 +374,8 @@ function preload(arrayOfImages) {
 preload([
     '../Images/overlay-right.png',
     '../Images/overlay-left.png',
-    '../Images/trongNuoc/sapa2.jpg',
     '../Images/tim-tour-bg.png',
+    '../Images/trongNuoc/sapa2.jpg',
+    '../Images/nuocNgoai/dubai-banner.jpg',
+    '../Images/trongNuoc/dalat2.jpg',
 ]);
