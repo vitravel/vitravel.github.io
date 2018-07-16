@@ -1,10 +1,10 @@
 // Loadding
-$(document).ready(function ($) {
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-    });
-});
-// $('.loader').delay(3000).fadeOut('slow');
+// $(document).ready(function ($) {
+//     $(window).on('load', function () {
+//         $(".loader").fadeOut();
+//     });
+// });
+$('.loader').delay(3000).fadeOut('slow');
 
 $(document).ready(function ($) {
     $(".mainMenuMobile .hasArrow").click(function () {
