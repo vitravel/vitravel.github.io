@@ -363,19 +363,19 @@ $(function ($) {
 
 $("img.lazy").lazyload();
 
-function preload(arrayOfImages) {
-    $(arrayOfImages).each(function(){
-        $('<img/>')[0].src = this;
-    });
-}
+// function preload(arrayOfImages) {
+//     $(arrayOfImages).each(function(){
+//         $('<img/>')[0].src = this;
+//     });
+// }
 
-// Usage:
+// // Usage:
 
-preload([
-    '../Images/overlay-right.png',
-    '../Images/overlay-left.png',
-    '../Images/tim-tour-bg.png',
-    '../Images/trongNuoc/sapa2.jpg',
-    '../Images/nuocNgoai/dubai-banner.jpg',
-    '../Images/trongNuoc/dalat2.jpg',
-]);
+// preload([
+//     '../Images/overlay-right.png',
+//     '../Images/overlay-left.png',
+//     '../Images/tim-tour-bg.png',
+//     '../Images/trongNuoc/sapa2.jpg',
+//     '../Images/nuocNgoai/dubai-banner.jpg',
+//     '../Images/trongNuoc/dalat2.jpg',
+// ]);

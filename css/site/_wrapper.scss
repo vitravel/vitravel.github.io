@@ -143,6 +143,7 @@
                                 background-size: auto 105vh;
                                 background-position: left top;
                                 transition: all 400ms ease-in-out;
+                                background-color: $mainBlue;
                             }
                             &.slick-current.slick-active {
                                 .image {
