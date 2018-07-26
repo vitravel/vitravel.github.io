@@ -4,7 +4,7 @@
 //         $(".loader").fadeOut();
 //     });
 // });
-$('.loader').delay(3000).fadeOut('slow');
+// $('.loader').delay(3000).fadeOut('slow');
 
 $(document).ready(function ($) {
     $(".mainMenuMobile .hasArrow").click(function () {
