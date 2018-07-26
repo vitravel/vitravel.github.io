@@ -44,10 +44,9 @@ $(document).ready(function ($) {
     });
 });
 
-// Scroll down PC menu custom
 $(function ($) {
     // Check the initial Poistion of the Sticky Header
-    var stickyHeaderPCTop = $('.home-slider .image').height();
+    var stickyHeaderPCTop = $('.menuPC').offset().top;
     $(window).scroll(function () {
         if ($(window).scrollTop() > stickyHeaderPCTop) {
             $('.menuPC').addClass("stickyMenuPC");
@@ -56,6 +55,20 @@ $(function ($) {
         }
     });
 });
+
+// Scroll down PC menu custom
+$(function ($) {
+    // Check the initial Poistion of the Sticky Header
+    var stickyHeaderPCTop = $('.home-slider .image').height();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > stickyHeaderPCTop) {
+            $('.home .menuPC').addClass("stickyMenuPC");
+        } else {
+            $('.home .menuPC').removeClass("stickyMenuPC");
+        }
+    });
+});
+
 
 // // click to move to a div mobile menu
 // $(document).ready(function ($) {
@@ -147,21 +160,21 @@ $(document).ready(function ($) {
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide right-arrowSlide icon-vitravel-arrow-right"></span>',
         responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    draggable: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    draggable: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
+            breakpoint: 1200,
+            settings: {
+                draggable: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                draggable: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
         ]
     });
 });
@@ -182,20 +195,20 @@ $(document).ready(function ($) {
         prevArrow: '<span class="arrowSlide2 left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide2 right-arrowSlide icon-vitravel-arrow-right"></span>',
         responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    draggable: true,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    draggable: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                draggable: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                draggable: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
         ]
     });
 });
@@ -216,21 +229,21 @@ $(document).ready(function ($) {
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide right-arrowSlide icon-vitravel-arrow-right"></span>',
         responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    draggable: true,
-                    slidesToShow: 1,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    draggable: true,
-                    dots: true,
-                    slidesToShow: 1,
-                    arrows: false,
-                }
-            },
+            breakpoint: 1200,
+            settings: {
+                draggable: true,
+                slidesToShow: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                draggable: true,
+                dots: true,
+                slidesToShow: 1,
+                arrows: false,
+            }
+        },
         ]
     });
 });
@@ -251,21 +264,21 @@ $(document).ready(function ($) {
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide right-arrowSlide icon-vitravel-arrow-right"></span>',
         responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    draggable: true,
-                    slidesToShow: 1,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    draggable: true,
-                    dots: true,
-                    slidesToShow: 1,
-                    arrows: false,
-                }
-            },
+            breakpoint: 1200,
+            settings: {
+                draggable: true,
+                slidesToShow: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                draggable: true,
+                dots: true,
+                slidesToShow: 1,
+                arrows: false,
+            }
+        },
         ]
     });
 });
@@ -288,7 +301,7 @@ $(document).ready(function ($) {
                 draggable: true,
                 slidesToShow: 1,
             }
-        }, ]
+        },]
     });
 });
 
@@ -308,34 +321,68 @@ $(document).ready(function ($) {
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide right-arrowSlide icon-vitravel-arrow-right"></span>',
         responsive: [{
-                breakpoint: 1600,
-                settings: {
-                    slidesToShow: 5,
-                    draggable: true,
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 5,
-                    draggable: true,
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    arrows: true,
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: true,
-                    centerMode: false,
-                    slidesToShow: 1,
-                }
-            },
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 5,
+                draggable: true,
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+                draggable: true,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: true,
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: true,
+                centerMode: false,
+                slidesToShow: 1,
+            }
+        },
+        ]
+    });
+});
+
+// Full width home banner
+$(document).ready(function ($) {
+    $('.fullWidthBanner-chitiettour .imageSlide').slick({
+        autoplay: true,
+        autoplaySpeed: 8000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        cssEase: 'ease-in-out',
+        speed: 800,
+        draggable: false,
+        prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
+        nextArrow: '<span class="arrowSlide right-arrowSlide icon-vitravel-arrow-right"></span>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                draggable: true,
+                slidesToShow: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                draggable: true,
+                dots: true,
+                slidesToShow: 1,
+                arrows: false,
+            }
+        },
         ]
     });
 });
@@ -363,19 +410,46 @@ $(function ($) {
 
 $("img.lazy").lazyload();
 
-// function preload(arrayOfImages) {
-//     $(arrayOfImages).each(function(){
-//         $('<img/>')[0].src = this;
-//     });
-// }
+// click Dia chi toi Map
+$(document).ready(function ($) {
+    var mapOffset = $("#map").offset().top;
+    $(".branches-wrapper .branch").click(function () {
+        $('html,body').animate({
+            scrollTop: mapOffset
+        },'slow');
+    });
+});
 
-// // Usage:
+// click dat ve
+$(document).ready(function ($) {
+    var mapOffset = $(".sidebar-datve").offset().top;
+    $(".thongtin-tour_row .dattour").click(function () {
+        $('html,body').animate({
+            scrollTop: mapOffset
+        },'slow');
+    });
+});
 
-// preload([
-//     '../Images/overlay-right.png',
-//     '../Images/overlay-left.png',
-//     '../Images/tim-tour-bg.png',
-//     '../Images/trongNuoc/sapa2.jpg',
-//     '../Images/nuocNgoai/dubai-banner.jpg',
-//     '../Images/trongNuoc/dalat2.jpg',
-// ]);
+// Slide info box
+$(document).ready(function() {
+    $('.slide-info-box .header').click(function() {
+        $(this) // the current a-element that was clicked
+            .closest('.slide-info-box') // .slide-info-box
+                .find('.content') // find .content inside .slide-info-box
+                    .stop() // stop animation
+                    .slideToggle(300); // Slide toggle
+    }); // end click
+
+}); // end ready
+
+$('.slide-info-box .header').click(function () {
+    $(this).toggleClass("active");
+});
+
+function fader() {
+    setInterval(function(){
+       $(".fullWidthBanner-chitiettour .text").fadeToggle(400);
+    }, 6000);
+}
+setTimeout(fader, 5000);
+

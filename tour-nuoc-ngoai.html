@@ -13,16 +13,20 @@
 	<!-- icomoonVitravel -->
 	<link rel="stylesheet" type="text/css" href="plugin/icomoonVitravel/style.css">
 
-	<!-- wow -->
-	<link rel="stylesheet" href="plugin/wow/css/libs/animate.css">
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="plugin/slick/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="plugin/slick/slick/slick-theme.css" />
 
 	<!-- wow -->
 	<link rel="stylesheet" href="plugin/wow/css/libs/animate.css">
+
+	<!-- Datepicker -->
+	<!-- <link href="plugin/datepicker/dist/datepicker.css" rel="stylesheet" type="text/css" /> -->
 
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<title>Du lịch nước ngoài - Vitravel Du lịch khám phá</title>
+	<title>Du lịch trong nước - Vitravel Du lịch khám phá</title>
 
 </head>
 
@@ -38,14 +42,9 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-	
+
 	<div class="wrapper">
 		<a href="#" id="back-to-top" title="Back to top"></a>
-
-		<div class="nonehtml-alert">
-			<i class="icon-bell"></i><span> Đây là <span class="highlight-text">bản thiết kế</span> gốc <span class="highlight-text">chưa</span> được lên <span class="highlight-text"></span><span class="highlight-text">HTML</span></span>
-			<i class="icon-Vitral-plus nonehtml-alert-close"></i>
-		</div>
 
 		<!-- Menu mobile -->
 		<div class="mobile-toggle">
@@ -82,13 +81,13 @@
 					<span class="arrow"></span>
 					<ul class="sub-menu">
 						<li>
-							<a href="mien-bac">Miền Bắc</a>
+							<a href="tour-mien-bac.html">Miền Bắc</a>
 						</li>
 						<li>
-							<a href="mien-trung">Miền Trung</a>
+							<a href="tour-mien-trung.html">Miền Trung</a>
 						</li>
 						<li>
-							<a href="mien-nam">Miền Nam</a>
+							<a href="tour-mien-nam.html">Miền Nam</a>
 						</li>
 					</ul>
 				</li>
@@ -97,19 +96,19 @@
 					<span class="arrow"></span>
 					<ul class="sub-menu">
 						<li>
-							<a href="chau-a">Châu Á</a>
+							<a href="tour-chau-a.html">Châu Á</a>
 						</li>
 						<li>
-							<a href="chau-au">Châu Âu</a>
+							<a href="tour-chau-au.html">Châu Âu</a>
 						</li>
 						<li>
-							<a href="chau-my">Châu Mỹ</a>
+							<a href="tour-chau-my.html">Châu Mỹ</a>
 						</li>
 						<li>
-							<a href="chau-phi">Châu Phi</a>
+							<a href="tour-chau-phi.html">Châu Phi</a>
 						</li>
 						<li>
-							<a href="chau-dai-duong">Châu Đại Dương</a>
+							<a href="tour-chau-dai-duong.html">Châu Đại Dương</a>
 						</li>
 					</ul>
 				</li>
@@ -167,37 +166,37 @@
 								<li class="active">
 									<a href="index.html">Trang chủ</a>
 								</li>
-								<li class="hasArrow nonelink">
+								<li class="hasArrow">
 									<a href="tour-trong-nuoc.html">Tour trong nước</a>
 									<ul class="sub-menu">
 										<li>
-											<a href="nonemien-bac">Miền Bắc</a>
+											<a href="tour-mien-bac.html">Miền Bắc</a>
 										</li>
 										<li>
-											<a href="nonemien-trung">Miền Trung</a>
+											<a href="tour-mien-trung.html">Miền Trung</a>
 										</li>
 										<li>
-											<a href="nonemien-nam">Miền Nam</a>
+											<a href="tour-mien-nam.html">Miền Nam</a>
 										</li>
 									</ul>
 								</li>
-								<li class="hasArrow nonelink">
+								<li class="hasArrow">
 									<a href="tour-nuoc-ngoai.html">Tour nước ngoài</a>
 									<ul class="sub-menu">
 										<li>
-											<a href="nonechau-a">Châu Á</a>
+											<a href="tour-chau-a.html">Châu Á</a>
 										</li>
 										<li>
-											<a href="nonechau-au">Châu Âu</a>
+											<a href="tour-chau-au.html">Châu Âu</a>
 										</li>
 										<li>
-											<a href="nonechau-my">Châu Mỹ</a>
+											<a href="tour-chau-my.html">Châu Mỹ</a>
 										</li>
 										<li>
-											<a href="nonechau-phi">Châu Phi</a>
+											<a href="tour-chau-phi.html">Châu Phi</a>
 										</li>
 										<li>
-											<a href="nonechau-dai-duong">Châu Đại Dương</a>
+											<a href="tour-chau-dai-duong.html">Châu Đại Dương</a>
 										</li>
 									</ul>
 
@@ -254,126 +253,896 @@
 		</header>
 		<!-- #header end -->
 
-		<div class="thietkegoc-image wow fadeInUp" data-wow-delay="1s">
-			<a href="tour-nuoc-ngoai-chi-tiet.html"><img class="thietkegoc-PC" src="Images/thietke/desktop/tournuocngoai-desktop.png" alt="">
-			<img class="thietkegoc-tablet" src="Images/thietke/tablet/drawable-xxxhdpi/tournuocngoai-tablet.png" alt="">
-			<img class="thietkegoc-mobile" src="Images/thietke/mb/drawable-xxxhdpi/tournuocngoai-mb.png" alt=""></a> 
+		<!-- Du lich nuoc ngoai -->
+		<div class="container-fluid dulich-trongnuoc-mainpage">
+			<div class="row" style="background-image: url(Images/dulich-nuocngoai-bg2-2.png), url(Images/dulich-nuocngoai2.jpg)">
+
+				<div class="container search-tourpage" >
+						<div class="row">
+							<div class="search-bar col-sm-12 col-md-6">
+								<div class="tim-tour">
+									<span class="icon-search-icon icon"></span>Tìm tour</div>
+								<div class="input-section">
+									<div class="group-input tour-location">
+										<span class="input-icon">
+											<i class="icon-location-icon icon"></i>
+										</span>
+										<input type="text" name="location" placeholder="Điểm đến">
+									</div>
+									<div class="group-input tour-time-start">
+										<span class="input-icon">
+											<i class="icon-calendar-icon icon"></i>
+										</span>
+										<input type="text" name="starttime" placeholder="Thời gian khởi hành" id="datepicker" value="">
+									</div>
+									<div class="group-input tour-price ">
+										<span class="input-icon">
+											<i class="icon-money icon"></i>
+										</span>
+										<input list="price-search" type="text" name="price" placeholder="Giá tour">
+									</div>
+								</div>
+								<div class="tim-kiem ">
+									<a href="#">Tìm Kiếm
+										<i class="icon-vitravel-arrow-right icon"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="description col-sm-12 col-md-6">
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								</p>
+								<p>
+									Donec quam felis, ultricies nec, pellentesque
+									eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+									eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+								</p>
+							</div>
+						</div>
+				</div>
+
+				<!-- Loc tour -->
+				<div class="container filter-tourpage" >
+						<div class="row">
+							<div class="search-bar">
+								<div class="tim-tour">
+									<span class="icon-filter-icon icon"></span><span class="text">Lọc tour</span></div>
+								<div class="input-section">
+									<div class="group-input tour-price ">
+										<span class="input-icon">
+											<i class="icon-money icon"></i>
+										</span>
+										<input list="price-search" type="text" name="price" placeholder="Theo giá">
+										<i class="vitravel-arrow-right icon"></i>
+									</div>
+									<div class="group-input tour-time-start">
+										<span class="input-icon">
+											<i class="icon-calendar-icon icon"></i>
+										</span>
+										<input type="text" name="starttime" placeholder="Thời gian khởi hành" id="datepicker" value="">
+									</div>
+									<div class="group-input tour-location">
+										<span class="input-icon">
+											<i class="icon-location-icon icon"></i>
+										</span>
+										<input type="text" name="location" placeholder="Tour đặc trưng">
+									</div>
+									<div class="group-input tour-location">
+										<span class="input-icon">
+											<i class="icon-location-icon icon"></i>
+										</span>
+										<input type="text" name="location" placeholder="Điểm đến cụ thể">
+									</div>
+									<div class="group-input tim-kiem ">
+										<a href="#">Tìm
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+
+				<div class="container dulich-trongnuoc-mainpage__container wow fadeInUp">
+					<div class="row">
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/dubai-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Du lịch đà lạt - hồ tuyến lâm - đường hầm điểu khắc</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">2,129,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/greatwall-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-train-icon"></i>
+											</div>
+											<div class="text">Tàu hoả</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/sing-tour-5.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-bus-icon"></i>
+											</div>
+											<div class="text">Xe</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/sing-tour-4.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/universal-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/sing-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/dubai-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Du lịch đà lạt - hồ tuyến lâm - đường hầm điểu khắc</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">2,129,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/greatwall-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-train-icon"></i>
+											</div>
+											<div class="text">Tàu hoả</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/sing-tour-5.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-bus-icon"></i>
+											</div>
+											<div class="text">Xe</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/sing-tour-4.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/universal-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 tour-box-col">
+							<div class="tour-box">
+								<div class="image">
+									<a href="tour-trong-nuoc-chi-tiet.html">
+										<div class="chitiet">
+											<i class="icon-Vitral-plus"></i>
+										</div>
+										<img class="lazy" src="Images/nuocNgoai/sing-tour.jpg" alt="">
+									</a>
+								</div>
+								<div class="info-box">
+									<div class="location">
+										<div class="icon">
+											<i class="icon-location-icon"></i>
+										</div>
+										<div class="text">Lorem ipsum dolor sit amet</div>
+									</div>
+									<div class="price">
+										<div class="icon">
+											<i class="icon-money"></i>
+										</div>
+										<div class="text">23,900,000 VND</div>
+									</div>
+									<div class="duration-transport">
+										<div class="duration">
+											<div class="icon">
+												<i class="icon-calendar2-icon"></i>
+											</div>
+											<div class="text">5 ngày 4 đêm</div>
+										</div>
+										<div class="transport">
+											<div class="icon">
+												<i class="icon-plane-icon"></i>
+											</div>
+											<div class="text">Máy bay</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-12 phantrang">
+						<ul class="pagination navbar-right">
+							<li>
+								<a href="#" class="icon-vitravel-arrow-left icon"></a>
+							</li>
+							<li>
+								<a href="#">1</a>
+							</li>
+							<li class="active">
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#" class="icon-vitravel-arrow-right icon"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
+
+		<!-- Y kien khach hang -->
+		<div class="ykien-khachhang wow fadeInUp" data-wow-delay="0.3s">
+			<div class="container">
+				<div class="">
+					<div class="title">
+						<div class="line1">
+							KHÁCH HÀNG NÓI VỀ
+						</div>
+						<div class="line2">
+							<span class="blue-text">Vi</span>
+							<span class="yellow-text">travel</span>
+						</div>
+					</div>
+					<div class="ykien-section">
+						<div class="item">
+							<div class="avatar">
+								<div class="image">
+									<img class="lazy" src="Images/avatar.png" alt="">
+								</div>
+							</div>
+							<div class="detail">
+								<div class="comment">
+									"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+								</div>
+								<div class="name">
+									<span>LÊ KHOA</span>
+								</div>
+								<div class="career">
+									<span>Sinh viên</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="avatar">
+								<div class="image">
+									<img class="lazy" src="Images/avatar.png" alt="">
+								</div>
+							</div>
+							<div class="detail">
+								<div class="comment">
+									"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+								</div>
+								<div class="name">
+									<span>LÊ KHOA</span>
+								</div>
+								<div class="career">
+									<span>Sinh viên</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="avatar">
+								<div class="image">
+									<img class="lazy" src="Images/avatar.png" alt="">
+								</div>
+							</div>
+							<div class="detail">
+								<div class="comment">
+									"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+								</div>
+								<div class="name">
+									<span>LÊ KHOA</span>
+								</div>
+								<div class="career">
+									<span>Sinh viên</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="avatar">
+								<div class="image">
+									<img class="lazy" src="Images/avatar.png" alt="">
+								</div>
+							</div>
+							<div class="detail">
+								<div class="comment">
+									"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+								</div>
+								<div class="name">
+									<span>LÊ KHOA</span>
+								</div>
+								<div class="career">
+									<span>Sinh viên</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- partner -->
+		<div class="partner wow fadeInUp">
+			<div class="container-fluid">
+				<div class="partner-section row">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/va-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vitravel-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/sunborn-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/va-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vitravel-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/sunborn-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 vechungtoi-footer">
+						<div class="contain">
+							<div class="title">Về chúng tôi</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa et magnis.</p>
+
+								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hinhanh-footer">
+						<div class="contain">
+							<div class="title">Hình ảnh</div>
+							<div class="container-fluid">
+								<div class="row">
+
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 1.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 2.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 3.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 4.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 5.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 6.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 7.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery.jpg" alt="">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-4 facebook-footer">
+						<div class="contain">
+							<div class="title">Facebook</div>
+							<div class="fb-page" data-href="https://www.facebook.com/dulich.vitravel" data-small-header="false" data-adapt-container-width="true"
+							 data-hide-cover="false" data-show-facepile="false">
+								<blockquote cite="https://www.facebook.com/dulich.vitravel" class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/dulich.vitravel">Vitravel</a>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+					<div class="copyright col-12">
+						<p>©2018 Copyright JAK Studio - 12/07/2018 School Project</p>
+					</div>
+
+
+				</div>
+			</div>
+		</footer>
+
+		<!-- <div class="thietkegoc-image wow fadeInUp" data-wow-delay="1s">
+			<a href="tour-trong-nuoc-chi-tiet.html"><img class="thietkegoc-PC" src="Images/thietke/desktop/tourtrongnuoc-desktop.png" alt="">
+			<img class="thietkegoc-tablet" src="Images/thietke/tablet/drawable-xxxhdpi/tourtrongnuoc-tablet.png" alt="">
+			<img class="thietkegoc-mobile" src="Images/thietke/mb/drawable-xxxhdpi/tourtrongnuoc-mb.png" alt=""></a>
+		</div> -->
 
 	</div>
 
 	<!-- Jquery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="./js/jquery.min.js" type="text/javascript"></script>
+
 	<!-- Bootstrap -->
-	<script src="plugin/bootstrap4/js/bootstrap.min.js"></script>
-	<script src="js/popper.min.js"></script>
+	<script src="./plugin/bootstrap4/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="./js/popper.min.js" type="text/javascript"></script>
+
+	<!-- Slick -->
+	<script type="text/javascript" src="./plugin/slick/slick/slick.min.js"></script>
+
+	<!-- lazy load -->
+	<script type="text/javascript" src="./js/jquery.lazyload.js"></script>
 
 	<!-- wow -->
-	<script src="plugin/wow/dist/wow.min.js"></script>
+	<script src="./plugin/wow/dist/wow.min.js" type="text/javascript"></script>
+
+	<!-- Javascript -->
+	<script src="./js/main.js" type="text/javascript"></script>
 
 	<script>
-		
-
-		// Scroll down mobile menu custom
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderTop = $('.menuMobile').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderTop) {
-		            $('.menuMobile').addClass("stickyMenuMobile");
-		        } else {
-		            $('.menuMobile').removeClass("stickyMenuMobile");
-		        }
-		    });
-		});
-
-		// Scroll down mobile menu toggle button custom
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderTop = $('.mobile-toggle').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderTop) {
-		            $('.mobile-toggle').addClass("stickyMobile-toggle");
-		        } else {
-		            $('.mobile-toggle').removeClass("stickyMobile-toggle");
-		        }
-		    });
-		});
-
-
-		jQuery(document).ready(function ($) {
-		    if ($('#back-to-top').length) {
-		        var scrollTrigger = 300,
-		            backToTop = function () {
-		                var scrollTop = $(window).scrollTop();
-		                if (scrollTop > scrollTrigger) {
-		                    $('#back-to-top').addClass('show');
-		                } else {
-		                    $('#back-to-top').removeClass('show');
-		                }
-		            };
-		        backToTop();
-		        $(window).on('scroll', function () {
-		            backToTop();
-		        });
-		        $('#back-to-top').on('click', function (e) {
-		            e.preventDefault();
-		            $('html,body').animate({
-		                scrollTop: 0
-		            }, 700);
-		        });
-		    }
-		});
-
-		// Scroll down PC menu custom
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderPCTop = $('.menuPC').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderPCTop) {
-		            $('.menuPC').addClass("stickyMenuPC");
-		        } else {
-		            $('.menuPC').removeClass("stickyMenuPC");
-		        }
-		    });
-		});
-
-		jQuery(document).ready(function ($) {
-		    $(".mainMenuMobile .hasArrow").click(function () {
-		        $(this).find(".arrow").toggleClass("active");
-		        $(this).find(".sub-menu").toggleClass("active");
-		    });
-		});
-
-		jQuery(document).ready(function ($) {
-		    $('.mobile-toggle').click(function () {
-		        $('.mainMenuMobile-wrapper').toggleClass('active');
-		        $(this).toggleClass('active');
-		    });
-		});
-
-		jQuery(document).ready(function ($) {
-		    $('.nonehtml-alert-close').click(function () {
-		        $('.nonehtml-alert').css({
-		            'overflow' : 'hidden',
-		            'opacity' : '0',
-		            'padding' : '0',
-		         });
-		    });
-		});
-
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderPCTop = $('.menuPC').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderPCTop) {
-		            $('.nonehtml-alert').addClass("nonehtml-alert-scroll");
-		        } else {
-		            $('.nonehtml-alert').removeClass("nonehtml-alert-scroll");
-		        }
-		    });
-		});
-
 		var wow = new WOW({
 			boxClass: 'wow', // animated element css class (default is wow)
 			animateClass: 'animated', // animation css class (default is animated)
@@ -389,10 +1158,8 @@
 		});
 		wow.init();
 
-		var tpj = jQuery;
-		tpj.noConflict();
 	</script>
-
+	
 </body>
 
 </html>

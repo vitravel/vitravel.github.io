@@ -4,21 +4,29 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="Images/logo.png">
+	<link rel="icon" href="Images/logoicon.png">
 	<meta name="author" content="JAKStudio" />
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="plugin/bootstrap4/css/bootstrap.min.css">
 
-
 	<!-- icomoonVitravel -->
 	<link rel="stylesheet" type="text/css" href="plugin/icomoonVitravel/style.css">
+
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="plugin/slick/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="plugin/slick/slick/slick-theme.css" />
 
 	<!-- wow -->
 	<link rel="stylesheet" href="plugin/wow/css/libs/animate.css">
 
+	<!-- selectize -->
+	<link rel="stylesheet" href="plugin/selectize/css/selectize.css">
+
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<title>Liên hệ Vitravel</title>
 
@@ -39,11 +47,6 @@
 
 	<div class="wrapper">
 		<a href="#" id="back-to-top" title="Back to top"></a>
-
-		<div class="nonehtml-alert">
-			<i class="icon-bell"></i><span> Đây là <span class="highlight-text">bản thiết kế</span> gốc <span class="highlight-text">chưa</span> được lên <span class="highlight-text"></span><span class="highlight-text">HTML</span></span>
-			<i class="icon-Vitral-plus nonehtml-alert-close"></i>
-		</div>
 
 		<!-- Menu mobile -->
 		<div class="mobile-toggle">
@@ -252,154 +255,977 @@
 		</header>
 		<!-- #header end -->
 
-		<div class="thietkegoc-image wow fadeInUp" data-wow-delay="1s">
+		<div class="lienhe-wrapper">
+			<div class="container-fluid lienhe-wrapper-inner">
+				<div class="container lienhe-wrapper-inner_container">
+					<div class="row lienhe-wrapper-inner_container_row">
+						<div class="col-md-12 col-lg-8 lienhe-wrapper-inner_container_row_col">
+							<div class="container lienhe">
+								<div class="row thongtin">
+
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 info-wrap">
+										<div class="diachi info-item">
+											<div class="icon">
+												<i class="icon-home-icon"></i>
+											</div>
+											<div class="text">Địa chỉ</div>
+										</div>
+										<div class="info-text">
+											34 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Tp.HCM
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 info-wrap">
+										<div class="diachi info-item">
+											<div class="icon">
+												<i class="icon-phone"></i>
+											</div>
+											<div class="text">Tư vấn</div>
+										</div>
+										<div class="info-text">
+											Điện thoại: 0895 324 543
+											<br> Hotline: 1900 1567
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 info-wrap">
+										<div class="diachi info-item">
+											<div class="icon">
+												<i class="icon-envelope"></i>
+											</div>
+											<div class="text">Email</div>
+										</div>
+										<div class="info-text">
+											contact@vitravel.com
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 social-wrapper">
+										<div class="contain">
+											<div class="social">
+												<div class="text">MẠNG XẠ HỘI</div>
+												<div class="icon">
+													<a href="">
+														<i class="icon-facbook-icon"></i>
+													</a>
+													<a href="">
+														<i class="icon-youtube-icon"></i>
+													</a>
+													<a href="">
+														<i class="icon-google-icon"></i>
+													</a>
+												</div>
+											</div>
+											<div class="mess">
+												<div class="text">Nhắn tin trực tiếp</div>
+												<div class="icon">
+													<a href="">
+														<i class="icon-messenger-icon"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="lienhe-form">
+									<div class="title blue-upcase-title">
+										<span>Liên hệ với chúng tôi</span>
+									</div>
+									<div class="form">
+										<div class="container">
+											<div class="row">
+												<div class="col-12 col-xs-12 col-md-6  input">
+													<input class="" type="text" name="name" placeholder="Họ tên">
+												</div>
+												<div class="col-12 col-xs-12 col-md-6 input">
+													<input class="" type="text" name="phone" placeholder="Số điện thoại">
+												</div>
+												<div class="col-12 col-xs-12 col-md-6 input">
+													<input class="" type="email" name="email" placeholder="Email">
+												</div>
+												<div class="col-12 col-xs-12 col-md-6 input">
+													<input class="" type="text" name="address" placeholder="Địa chỉ">
+												</div>
+												<div class="col-12 col-xs-12 col-md-12 input">
+													<input class="" type="text" name="contain" placeholder="Nội dung">
+												</div>
+												<div class="col-12 col-xs-12 col-md-12 verification">
+													<div name="verification" id="verification" class="g-recaptcha" data-sitekey="6Le1qlcUAAAAAIqhHQjanxeU-5Bx4fpUClEJkJlx"></div>
+												</div>
+
+												<button class="button buttonStyle1" id="btn-validate">Gửi</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 col-lg-4 lienhe-title">
+							<div class="text">
+								<div class="title upcase-title">
+									LIÊN HỆ
+								</div>
+								<div class="descriptio">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 branches-wrapper">
+							<div class="container-fluid">
+								<div class="title blue-upcase-title">
+									<span>
+										<i class="icon-branche-icon"></i> HỆ THỐNG CHI NHÁNH CÔNG TY</span>
+								</div>
+								<div class="row branches">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title upcase-title">
+										KHU VỰC MIỀN NAM
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(0);return false;">
+											<div class="name">
+												Long Xuyên
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(1);return false;">
+											<div class="name">
+												Phú quốc
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(2);return false;">
+											<div class="name">
+												Đồng Nai
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(3);return false;">
+											<div class="name">
+												Bình Dương
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(4);return false;">
+											<div class="name">
+												Vũng Tàu
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(5);return false;">
+											<div class="name">
+												Châu Đốc
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row branches">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title upcase-title">
+										Nước ngoài
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(6);return false;">
+											<div class="name">
+												Mỹ
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(7);return false;">
+											<div class="name">
+												Pháp
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 branch-wrap">
+										<div class="branch" onclick="myClick(8);return false;">
+											<div class="name">
+												Singapore
+											</div>
+											<div class="detail">
+												<p>
+													<strong>Địa chỉ:</strong> 34 Lorem ipsum dolor sit amet, consect adipiscing elit</p>
+												<p>
+													<strong>Liên hệ:</strong> 08.3888.3999 – 09.3888.3999</p>
+												<p>
+													<strong>Email:</strong> vitravel.hanoi@vitravel.com</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title blue-upcase-title map-title">
+							<span>
+								<i class="icon-branche-icon"></i> BẢN ĐỒ
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="map"></div>
+			</div>
+		</div>
+
+		<!-- partner -->
+		<div class="partner wow fadeInUp">
+			<div class="container-fluid">
+				<div class="partner-section row">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/va-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vitravel-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/sunborn-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/va-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vitravel-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/sunborn-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="image">
+							<a href="#">
+								<img class="lazy" src="Images/vp-logo-gray.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 vechungtoi-footer">
+						<div class="contain">
+							<div class="title">Về chúng tôi</div>
+							<div class="text">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa et magnis.</p>
+
+								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 hinhanh-footer">
+						<div class="contain">
+							<div class="title">Hình ảnh</div>
+							<div class="container-fluid">
+								<div class="row">
+
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 1.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 2.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 3.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 4.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 5.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 6.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery – 7.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+										<a href="tour-nuoc-ngoai-chi-tiet.html">
+											<img class="lazy" src="Images/gallery/image-gallery.jpg" alt="">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-4 facebook-footer">
+						<div class="contain">
+							<div class="title">Facebook</div>
+							<div class="fb-page" data-href="https://www.facebook.com/dulich.vitravel" data-small-header="false" data-adapt-container-width="true"
+							 data-hide-cover="false" data-show-facepile="false">
+								<blockquote cite="https://www.facebook.com/dulich.vitravel" class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/dulich.vitravel">Vitravel</a>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+					<div class="copyright col-12">
+						<p>©2018 Copyright JAK Studio - 12/07/2018 School Project</p>
+					</div>
+
+
+				</div>
+			</div>
+		</footer>
+
+		<!-- <div class="thietkegoc-image wow fadeInUp" data-wow-delay="1s">
 			<img class="thietkegoc-PC" src="Images/thietke/desktop/lienhe-desktop.png" alt="">
 			<img class="thietkegoc-tablet" src="Images/thietke/tablet/drawable-xxxhdpi/lienhe-tablet.png" alt="">
 			<img class="thietkegoc-mobile" src="Images/thietke/mb/drawable-xxxhdpi/lienhe-mb.png" alt="">
-		</div>
+		</div> -->
 
 	</div>
 
 	<!-- Jquery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="./js/jquery.min.js" type="text/javascript"></script>
+
 	<!-- Bootstrap -->
-	<script src="plugin/bootstrap4/js/bootstrap.min.js"></script>
-	<script src="js/popper.min.js"></script>
+	<script src="./plugin/bootstrap4/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="./js/popper.min.js" type="text/javascript"></script>
+
+	<!-- Slick -->
+	<script type="text/javascript" src="./plugin/slick/slick/slick.min.js"></script>
+
+	<!-- lazy load -->
+	<script type="text/javascript" src="./js/jquery.lazyload.js"></script>
 
 	<!-- wow -->
-	<script src="plugin/wow/dist/wow.min.js"></script>
+	<script src="./plugin/wow/dist/wow.min.js" type="text/javascript"></script>
+
+	<!-- wow -->
+	<script src="./plugin/selectize/js/selectize.min.js" type="text/javascript"></script>
+
+	<!-- Javascript -->
+	<script src="./js/main.js" type="text/javascript"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
 	<script>
-		
-		// Scroll down mobile menu custom
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderTop = $('.menuMobile').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderTop) {
-		            $('.menuMobile').addClass("stickyMenuMobile");
-		        } else {
-		            $('.menuMobile').removeClass("stickyMenuMobile");
-		        }
-		    });
+		var markers = [];
+		function initialize() {
+			var mapOptions = {
+				zoom: 15,
+				center: new google.maps.LatLng(10.957556, 106.860134),
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				styles: [
+					{
+						"featureType": "administrative",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "administrative",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#757575"
+							},
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.country",
+						"elementType": "all",
+						"stylers": [
+							{
+								"color": "#00abec"
+							},
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.country",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"visibility": "simplified"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "on"
+							},
+							{
+								"color": "#00abec"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "geometry.fill",
+						"stylers": [
+							{
+								"color": "#cd2f2f"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "geometry.stroke",
+						"stylers": [
+							{
+								"visibility": "on"
+							},
+							{
+								"color": "#00abec"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "labels.text",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#919191"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"visibility": "off"
+							},
+							{
+								"saturation": "0"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.locality",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.locality",
+						"elementType": "geometry.stroke",
+						"stylers": [
+							{
+								"visibility": "off"
+							},
+							{
+								"color": "#ff0000"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.locality",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#606060"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.locality",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.neighborhood",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.land_parcel",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "landscape",
+						"elementType": "all",
+						"stylers": [
+							{
+								"color": "#f6f6f6"
+							},
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "on"
+							},
+							{
+								"saturation": "2"
+							},
+							{
+								"lightness": "-6"
+							}
+						]
+					},
+					{
+						"featureType": "poi.business",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "poi.business",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"visibility": "off"
+							},
+							{
+								"color": "#ff0000"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "all",
+						"stylers": [
+							{
+								"saturation": -100
+							},
+							{
+								"lightness": 45
+							},
+							{
+								"color": "#ffffff"
+							},
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text",
+						"stylers": [
+							{
+								"visibility": "on"
+							},
+							{
+								"color": "#737373"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#8c8c8c"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"visibility": "on"
+							},
+							{
+								"color": "#ffffff"
+							}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "simplified"
+							},
+							{
+								"color": "#efefef"
+							}
+						]
+					},
+					{
+						"featureType": "road.arterial",
+						"elementType": "labels.icon",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "transit.station",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "transit.station.airport",
+						"elementType": "geometry.fill",
+						"stylers": [
+							{
+								"visibility": "on"
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "all",
+						"stylers": [
+							{
+								"visibility": "on"
+							},
+							{
+								"color": "#00abec"
+							}
+						]
+					}
+				],
+
+			}
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			var locations = [
+				{
+					lat: 10.957556,
+					lng: 106.860134,
+					name: 'ĐỒNG NAI',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 20.847291,
+					lng: 106.693149,
+					name: 'PHÚ QUỐC',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 12.241315,
+					lng: 109.188641,
+					name: 'ĐỒNG NAI',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 16.053537,
+					lng: 108.204570,
+					name: 'BÌNH DƯƠNG',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 21.029131,
+					lng: 105.836424,
+					name: 'VŨNG TÀU',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 10.409748,
+					lng: 107.135810,
+					name: 'CHÂU ĐỐC',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 10.956399,
+					lng: 106.842522,
+					name: 'MỸ',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 10.042538,
+					lng: 105.752642,
+					name: 'PHÁP',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+				{
+					lat: 10.409748,
+					lng: 107.135810,
+					name: 'SINGAPORE',
+					icon: 'Images/map-marker.png',
+					address: 'Địa chỉ: 34 Lorem ipsum dolor sit amet,  consectetuer adipiscing elit',
+					phone: '08.3888.3999 – 09.3888.3999',
+					email: 'vitravel.hanoi@vitravel.com',
+				},
+			];
+			var marker, i;
+			var infowindow = new google.maps.InfoWindow();
+
+
+			google.maps.event.addListener(map, 'click', function () {
+				infowindow.close();
+			});
+
+
+			for (i = 0; i < locations.length; i++) {
+				marker = new google.maps.Marker({
+					position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+					map: map,
+					icon: locations[i].icon
+				});
+
+				google.maps.event.addListener(marker, 'click', (function (marker, i) {
+					return function () {
+						map.setCenter(marker.getPosition());
+						infowindow.setContent(
+							'<div class="map-location-info"><div class="col-xs-12"><h1 class="map-name upcase-title">' + locations[i].name
+							+ '</h1><p class="map-address"><strong>Địa chỉ: </strong>' + locations[i].address
+							+ '</p><p class="map-phone"><strong>Số điện thoại: </strong>' + locations[i].phone
+							+ '</p><p clas="map-email"><strong>Email: </strong>' + locations[i].email
+							+ '</p></div><div class="clearfix"></div></div>'
+						);
+						infowindow.open(map, marker);
+					}
+				})(marker, i));
+
+				markers.push(marker);
+			}
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		function myClick(id) {
+			google.maps.event.trigger(markers[id], 'click');
+		}
+
+		setTimeout(function () {
+			$('#verification').find('iframe').attr({
+				'id': 'verification-iframe',
+				'name': 'verification_iframe'
+			})
+
+			$("#verification-iframe").find(".rc-anchor-normal").css('width', '100% !important');
+			$("#verification-iframe").contents().find(".rc-anchor-normal").css('width', '100% !important');
+
+			var wow = new WOW({
+				boxClass: 'wow', // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset: 0, // distance to the element when triggering the animation (default is 0)
+				mobile: true, // trigger animations on mobile devices (default is true)
+				live: true, // act on asynchronously loaded content (default is true)
+				callback: function (box) {
+					// the callback is fired every time an animation is started
+					// the argument that is passed in is the DOM node being animated
+				},
+				scrollContainer: null, // optional scroll container selector, otherwise use window,
+				resetAnimation: true, // reset animation on end (default is true)
+			});
+			wow.init();
+
+			var tpj = jQuery;
+			tpj.noConflict();
 		});
 
-		// Scroll down mobile menu toggle button custom
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderTop = $('.mobile-toggle').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderTop) {
-		            $('.mobile-toggle').addClass("stickyMobile-toggle");
-		        } else {
-		            $('.mobile-toggle').removeClass("stickyMobile-toggle");
-		        }
-		    });
-		});
-
-
-		jQuery(document).ready(function ($) {
-		    if ($('#back-to-top').length) {
-		        var scrollTrigger = 300,
-		            backToTop = function () {
-		                var scrollTop = $(window).scrollTop();
-		                if (scrollTop > scrollTrigger) {
-		                    $('#back-to-top').addClass('show');
-		                } else {
-		                    $('#back-to-top').removeClass('show');
-		                }
-		            };
-		        backToTop();
-		        $(window).on('scroll', function () {
-		            backToTop();
-		        });
-		        $('#back-to-top').on('click', function (e) {
-		            e.preventDefault();
-		            $('html,body').animate({
-		                scrollTop: 0
-		            }, 700);
-		        });
-		    }
-		});
-
-		// Scroll down PC menu custom
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderPCTop = $('.menuPC').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderPCTop) {
-		            $('.menuPC').addClass("stickyMenuPC");
-		        } else {
-		            $('.menuPC').removeClass("stickyMenuPC");
-		        }
-		    });
-		});
-
-		jQuery(document).ready(function ($) {
-		    $(".mainMenuMobile .hasArrow").click(function () {
-		        $(this).find(".arrow").toggleClass("active");
-		        $(this).find(".sub-menu").toggleClass("active");
-		    });
-		});
-
-		jQuery(document).ready(function ($) {
-		    $('.mobile-toggle').click(function () {
-		        $('.mainMenuMobile-wrapper').toggleClass('active');
-		        $(this).toggleClass('active');
-		    });
-		});
-
-		jQuery(document).ready(function ($) {
-		    $('.nonehtml-alert-close').click(function () {
-		        $('.nonehtml-alert').css({
-		            'overflow' : 'hidden',
-		            'opacity' : '0',
-		            'padding' : '0',
-		         });
-		    });
-		});
-
-		$(function ($) {
-		    // Check the initial Poistion of the Sticky Header
-		    var stickyHeaderPCTop = $('.menuPC').offset().top;
-		    $(window).scroll(function () {
-		        if ($(window).scrollTop() > stickyHeaderPCTop) {
-		            $('.nonehtml-alert').addClass("nonehtml-alert-scroll");
-		        } else {
-		            $('.nonehtml-alert').removeClass("nonehtml-alert-scroll");
-		        }
-		    });
-		});
-
-		jQuery(document).ready(function ($) {
-		    $('.nonehtml-alert-close').click(function () {
-		        $('.nonehtml-alert').css({
-		            'overflow' : 'hidden',
-		            'opacity' : '0',
-		            'padding' : '0',
-		         });
-		    });
-		});
-
-		var wow = new WOW({
-			boxClass: 'wow', // animated element css class (default is wow)
-			animateClass: 'animated', // animation css class (default is animated)
-			offset: 0, // distance to the element when triggering the animation (default is 0)
-			mobile: true, // trigger animations on mobile devices (default is true)
-			live: true, // act on asynchronously loaded content (default is true)
-			callback: function (box) {
-				// the callback is fired every time an animation is started
-				// the argument that is passed in is the DOM node being animated
-			},
-			scrollContainer: null, // optional scroll container selector, otherwise use window,
-			resetAnimation: true, // reset animation on end (default is true)
-		});
-		wow.init();
-
-		var tpj = jQuery;
-		tpj.noConflict();
 	</script>
-	
+
 </body>
 
 </html>
