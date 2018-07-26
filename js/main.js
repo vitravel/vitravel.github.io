@@ -311,11 +311,11 @@ $(document).ready(function ($) {
         autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 7,
-        slidesToScroll: 1,
+        slidesToScroll: 6,
         arrows: false,
         dots: false,
         cssEase: 'ease-in-out',
-        speed: 800,
+        speed: 1800,
         draggable: true,
         centerMode: false,
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
@@ -324,14 +324,18 @@ $(document).ready(function ($) {
             breakpoint: 1600,
             settings: {
                 slidesToShow: 5,
+                slidesToScroll: 4,
                 draggable: true,
+                speed: 1700,
             }
         },
         {
             breakpoint: 1200,
             settings: {
                 slidesToShow: 5,
+                slidesToScroll: 4,
                 draggable: true,
+                speed: 1200,
             }
         },
         {
@@ -339,6 +343,8 @@ $(document).ready(function ($) {
             settings: {
                 arrows: true,
                 slidesToShow: 3,
+                slidesToScroll: 2,
+                speed: 800,
             }
         },
         {
@@ -347,6 +353,8 @@ $(document).ready(function ($) {
                 arrows: true,
                 centerMode: false,
                 slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 800,
             }
         },
         ]

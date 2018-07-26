@@ -528,7 +528,7 @@
 							</div>
 							<div class="transport">
 								<div class="text">Máy bay
-									<span>
+									<span class="fly-brand">
 										<img class="brand-logo" src="Images/logo-vna.png">
 									</span>
 								</div>
@@ -538,10 +538,11 @@
 							</div>
 							<div class="place">
 								<div class="text">Khách sạn: 4 sao
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
+									<span class="stars"><span class="icon-star"></span>
+										<span class="icon-star"></span>
+										<span class="icon-star"></span>
+										<span class="icon-star"></span>
+									</span>
 								</div>
 								<div class="icon">
 									<i class="icon-hotel-icon icon"></i>
@@ -771,13 +772,17 @@
 							<div class="tab-content">
 								<!-- dat ve -->
 								<div role="tabpanel" class="tab-pane fade in active show tabpanel-tourmoi" id="datve">
+									<div class="datveTitle">
+										<i class="icon-ticket2"></i>
+										<div class="text">Đặt vé</div>
+									</div>
 									<input type="text" class="" name="name" placeholder="Họ tên">
-									<input type="text" class="" name="name" placeholder="Số điện thoại">
-									<input type="text" class="" name="name" placeholder="Số người">
-									<input type="text" class="lock" name="name" placeholder="Điểm đến" value="Sapa - Lorem ipsum dolor sit amet" readonly>
-									<input type="text" class="lock" name="name" placeholder="Giờ khởi hành" value="Khởi hành: ngày 4 tháng 8" readonly>
-									<input type="text" class="lock" name="name" placeholder="thời lượng" value="4 ngày 3 đêm" readonly>
-									<textarea cols="30" rows="4" placeholder="Ghi chú"></textarea>
+									<input type="text" class="" name="phone" placeholder="Số điện thoại">
+									<input type="text" class="" name="members" placeholder="Số người">
+									<input type="text" class="lock" name="address" placeholder="Điểm đến" value="Sapa - Lorem ipsum dolor sit amet" readonly>
+									<input type="text" class="lock" name="starttime" placeholder="Giờ khởi hành" value="Khởi hành: ngày 4 tháng 8" readonly>
+									<input type="text" class="lock" name="duration" placeholder="thời lượng" value="4 ngày 3 đêm" readonly>
+									<textarea cols="30" rows="4" placeholder="Ghi chú" style="overflow-y: hidden; height: 140px;"></textarea>
 									<div class="verification">
 										<div name="verification" id="verification" class="g-recaptcha" data-sitekey="6Le1qlcUAAAAAIqhHQjanxeU-5Bx4fpUClEJkJlx">
 										</div>
@@ -787,7 +792,24 @@
 								</div>
 								<!-- tu van -->
 								<div role="tabpanel" class="tab-pane fade tabpanel-tourdaxem" id="hotro">
-									dsad
+									<div class="datveTitle">
+										<i class="icon-support-icon"></i>
+									</div>
+									<div class="supportinfo">
+										<div class="title">Điện thoại:</div>
+										<div class="number">0895 324 543</div>
+										<div class="number">094 5423 3234</div>
+										<div class="title hotline">Hotline:</div>
+										<div class="number">1900 1567</div>
+										<div class="button dangkytuvan">
+												<i class="icon-paper"></i>
+											<div class="text">Đăng ký tư vấn</div>
+										</div>
+										<div class="button messenger">
+												<i class="icon-messenger-icon"></i>
+											<div class="text">Nhắn tin cho chúng tôi</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -798,7 +820,7 @@
 				<div class="col-md-12 col-lg-12 col-xl-12 tourlienquan">
 					<p class="title bold-title">Có thể bạn quan tâm</p>
 					<div class="tourlienquan-wrap row">
-						<div class="col-xl-3">
+						<div class="col-md-6 col-xl-3">
 							<div class="tour-box">
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
@@ -838,7 +860,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-md-6 col-xl-3">
 							<div class="tour-box">
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
@@ -878,7 +900,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-md-6 col-xl-3">
 							<div class="tour-box">
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
@@ -918,7 +940,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-md-6 col-xl-3">
 							<div class="tour-box">
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
@@ -1128,6 +1150,8 @@
 			</div>
 		</footer>
 
+
+
 		<!-- <div class="thietkegoc-image wow fadeInUp" data-wow-delay="1s">
 			<img class="thietkegoc-PC" src="Images/thietke/desktop/tourtrongnuoc-chitiet-desktop.png" alt="">
 			<img class="thietkegoc-tablet" src="Images/thietke/tablet/drawable-xxxhdpi/tournuocngoai-chitiet-tablet.png" alt="">
@@ -1158,6 +1182,7 @@
 	<script src="./js/main.js" type="text/javascript"></script>
 
 	<script>
+
 		var wow = new WOW({
 			boxClass: 'wow', // animated element css class (default is wow)
 			animateClass: 'animated', // animation css class (default is animated)
