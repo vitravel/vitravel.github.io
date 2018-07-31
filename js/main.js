@@ -144,6 +144,39 @@ $(document).ready(function ($) {
 });
 
 
+// Ve chung toi features
+$(document).ready(function ($) {
+    $('.vechungtoi .vechungtoi_container .row').slick({
+        autoplay: true,
+        autoplaySpeed: 3500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        focusOnSelect: true,
+        cssEase: 'ease-in-out',
+        speed: 800,
+        draggable: false,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                draggable: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                draggable: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        ]
+    });
+});
+
 // Slide Home features
 $(document).ready(function ($) {
     $('.features .container .row').slick({
@@ -424,7 +457,7 @@ $(document).ready(function ($) {
     $(".branches-wrapper .branch").click(function () {
         $('html,body').animate({
             scrollTop: mapOffset
-        },'slow');
+        }, 'slow');
     });
 });
 
@@ -434,18 +467,18 @@ $(document).ready(function ($) {
     $(".thongtin-tour_row .dattour").click(function () {
         $('html,body').animate({
             scrollTop: mapOffset
-        },'slow');
+        }, 'slow');
     });
 });
 
 // Slide info box
-$(document).ready(function() {
-    $('.slide-info-box .header').click(function() {
+$(document).ready(function () {
+    $('.slide-info-box .header').click(function () {
         $(this) // the current a-element that was clicked
             .closest('.slide-info-box') // .slide-info-box
-                .find('.content') // find .content inside .slide-info-box
-                    .stop() // stop animation
-                    .slideToggle(300); // Slide toggle
+            .find('.content') // find .content inside .slide-info-box
+            .stop() // stop animation
+            .slideToggle(300); // Slide toggle
     }); // end click
 
 }); // end ready
@@ -455,9 +488,25 @@ $('.slide-info-box .header').click(function () {
 });
 
 function fader() {
-    setInterval(function(){
-       $(".fullWidthBanner-chitiettour .text").fadeToggle(400);
+    setInterval(function () {
+        $(".fullWidthBanner-chitiettour .text").fadeToggle(400);
     }, 6000);
 }
 setTimeout(fader, 5000);
 
+// Footer images
+$(document).ready(function () {
+    $('.image-footer').fancybox({
+
+        closeBtn: true,
+        arrows: false,
+        nextClick: true,
+
+        helpers: {
+            thumbs: {
+                width: 50,
+                height: 50
+            }
+        }
+    });
+});

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ui9bh2');
-  src:  url('fonts/icomoon.eot?ui9bh2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ui9bh2') format('truetype'),
-    url('fonts/icomoon.woff?ui9bh2') format('woff'),
-    url('fonts/icomoon.svg?ui9bh2#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?yla7aw');
+  src:  url('fonts/icomoon.eot?yla7aw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yla7aw') format('truetype'),
+    url('fonts/icomoon.woff?yla7aw') format('woff'),
+    url('fonts/icomoon.svg?yla7aw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,126 +24,117 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-hotel2-icon:before {
+  content: "\e925";
+}
+.icon-home-icon:before {
+  content: "\e924";
+}
+.icon-vitravel-customer:before {
+  content: "\e923";
+}
+.icon-branche-icon:before {
+  content: "\e922";
+}
+.icon-youtube-icon:before {
+  content: "\e920";
+}
+.icon-vitravel-restaurant:before {
+  content: "\e91d";
+}
+.icon-vitravel-plus:before {
+  content: "\e91c";
+}
+.icon-vitravel-arrow-right:before {
+  content: "\e91b";
+}
+.icon-vitravel-arrow-left:before {
+  content: "\e91a";
+}
+.icon-train-icon:before {
+  content: "\e917";
+}
+.icon-ticket:before {
+  content: "\e915";
+}
+.icon-star:before {
+  content: "\e912";
+}
+.icon-search-icon:before {
+  content: "\e911";
+}
+.icon-plane-icon:before {
+  content: "\e910";
+}
+.icon-phone:before {
+  content: "\e90f";
+}
+.icon-paper:before {
+  content: "\e90e";
+}
+.icon-money:before {
+  content: "\e90d";
+}
+.icon-messenger-icon:before {
+  content: "\e90c";
+}
+.icon-location-icon:before {
+  content: "\e90b";
+}
+.icon-location2-icon:before {
+  content: "\e90a";
+}
+.icon-hotel-icon:before {
+  content: "\e909";
+}
+.icon-google-icon:before {
+  content: "\e908";
+}
+.icon-filter-icon:before {
+  content: "\e907";
+}
+.icon-facbook-icon:before {
+  content: "\e906";
+}
+.icon-envelope:before {
+  content: "\e905";
+}
+.icon-calendar-icon:before {
+  content: "\e904";
+}
+.icon-calendar2-icon:before {
+  content: "\e903";
+}
+.icon-bus-icon:before {
+  content: "\e902";
+}
+.icon-branche-icon-copy:before {
+  content: "\e901";
+}
+.icon-boat-icon:before {
+  content: "\e900";
+}
+.icon-vitravel-world:before {
+  content: "\e91f";
+}
+.icon-ticket2:before {
+  content: "\e916";
+}
+.icon-support-icon:before {
+  content: "\e914";
+}
+.icon-stars-icon:before {
+  content: "\e913";
+}
 .icon-alert-circle:before {
   content: "\e918";
 }
 .icon-alert-triangle:before {
   content: "\e919";
 }
-.icon-arrow-down:before {
-  content: "\e91a";
-}
-.icon-arrow-left:before {
-  content: "\e91b";
-}
-.icon-arrow-right:before {
-  content: "\e91c";
-}
-.icon-arrow-up:before {
-  content: "\e91d";
-}
 .icon-bell:before {
   content: "\e91e";
 }
-.icon-edit-2:before {
-  content: "\e925";
-}
-.icon-settings:before {
-  content: "\e927";
-}
-.icon-share-2:before {
-  content: "\e928";
-}
-.icon-filter-icon:before {
-  content: "\e922";
-}
-.icon-home-icon:before {
+.icon-edit-3:before {
   content: "\e921";
-}
-.icon-bus-icon:before {
-  content: "\e920";
-}
-.icon-location2-icon:before {
-  content: "\e909";
-}
-.icon-calendar-icon:before {
-  content: "\e91f";
-}
-.icon-vitravel-arrow-right:before {
-  content: "\e929";
-}
-.icon-vitravel-arrow-left:before {
-  content: "\e92a";
-}
-.icon-Vitral-plus:before {
-  content: "\e92b";
-}
-.icon-boat-icon:before {
-  content: "\e900";
-}
-.icon-branche-icon:before {
-  content: "\e901";
-}
-.icon-calendar2-icon:before {
-  content: "\e902";
-}
-.icon-envelope:before {
-  content: "\e903";
-}
-.icon-facbook-icon:before {
-  content: "\e904";
-}
-.icon-google-icon:before {
-  content: "\e905";
-}
-.icon-hotel-icon:before {
-  content: "\e906";
-}
-.icon-location-icon:before {
-  content: "\e907";
-}
-.icon-marker:before {
-  content: "\e908";
-}
-.icon-messenger-icon:before {
-  content: "\e90a";
-}
-.icon-money:before {
-  content: "\e90b";
-}
-.icon-paper:before {
-  content: "\e90c";
-}
-.icon-phone:before {
-  content: "\e90d";
-}
-.icon-plane-icon:before {
-  content: "\e90e";
-}
-.icon-restaurant-icon:before {
-  content: "\e90f";
-}
-.icon-search-icon:before {
-  content: "\e910";
-}
-.icon-star:before {
-  content: "\e911";
-}
-.icon-support-icon:before {
-  content: "\e913";
-}
-.icon-ticket:before {
-  content: "\e914";
-}
-.icon-train-icon:before {
-  content: "\e916";
-}
-.icon-youtube-icon:before {
-  content: "\e917";
-}
-.icon-stars-icon:before {
-  content: "\e912";
-}
-.icon-ticket2:before {
-  content: "\e915";
 }

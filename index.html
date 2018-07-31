@@ -9,7 +9,7 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="plugin/bootstrap4/css/bootstrap.min.css">
-	
+
 	<!-- icomoonVitravel -->
 	<link rel="stylesheet" type="text/css" href="plugin/icomoonVitravel/style.css">
 
@@ -25,13 +25,26 @@
 	<!-- wow -->
 	<link rel="stylesheet" href="plugin/wow/css/libs/animate.css">
 
-	<!-- Datepicker -->
-	<!-- <link href="plugin/datepicker/dist/datepicker.css" rel="stylesheet" type="text/css" /> -->
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="plugin/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="plugin/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="plugin/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen"/>
 
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<title>Vitravel - Du lịch khám phá</title>
+
+	<style>
+		.tintuc-home__container::before {
+			content: "Tin tức"
+		}
+
+		.ykien-khachhang .container::before {
+			content: "Ý kiến"
+		}
+	</style>
 
 </head>
 
@@ -168,95 +181,97 @@
 
 		<!-- Slider -->
 		<section id="slider">
-		<div id="" class="home-slider">
+			<div id="" class="home-slider">
 
-			<div class="container-fluid">
+				<div class="container-fluid">
 
-				<div class="row">
+					<div class="row">
 
-					<!-- <div class="overlayTexture">
+						<!-- <div class="overlayTexture">
 						<div class="wrap">
 							<div class="image" style=""></div>
 						</div>
 					</div> -->
-					
-					<div class="overlay-right overlay" style="background-image: url(Images/overlay-right.png)"></div>
 
-					<div class="overlay-left overlay" style="background-image: url(Images/overlay-left.png)"></div>
+						<div class="overlay-right overlay" style="background-image: url(Images/overlay-right.png)"></div>
 
-					<div class="imageSlide wow fadeInLeft" data-wow-delay="1s">
-						<div class="item">
-							<div class="wrap">
-								<div class="text">
-									<div class="title">
-										<span>Sapa</span>
+						<div class="overlay-left overlay" style="background-image: url(Images/overlay-left.png)"></div>
+
+						<div class="imageSlide wow fadeInLeft" data-wow-delay="1s">
+							<div class="item">
+								<div class="wrap">
+									<div class="text">
+										<div class="title">
+											<span>Sapa</span>
+										</div>
+										<div class="top-description">
+											<span>Tìm hiểu đời sống dân tộc thiểu số</span>
+										</div>
+										<div class="description">
+											<span>Ngắm toàn cảnh Sapa và Nóc nhà Đông Dương. Đỉnh Fansipan tại sân mây. Tìm hiểu đời sống dân tộc thiểu số tại bản
+												Tả Phìn
+											</span>
+										</div>
+										<a href="tour-nuoc-ngoai-chi-tiet.html" class="button buttonStyle3 datve">
+											<span>Đặt vé</span>
+											<i class="icon-vitravel-arrow-right"></i>
+										</a>
 									</div>
-									<div class="top-description">
-										<span>Tìm hiểu đời sống dân tộc thiểu số</span>
+									<div class="image" style="background-image: url(Images/trongNuoc/sapa2.jpg)">
 									</div>
-									<div class="description">
-										<span>Ngắm toàn cảnh Sapa và Nóc nhà Đông Dương. Đỉnh Fansipan tại sân mây. Tìm hiểu đời sống dân tộc thiểu số tại bản Tả
-											Phìn</span>
-									</div>
-									<a href="tour-nuoc-ngoai-chi-tiet.html" class="button buttonStyle3 datve">
-										<span>Đặt vé</span>
-										<i class="icon-vitravel-arrow-right"></i>
-									</a>
-								</div>
-								<div class="image" style="background-image: url(Images/trongNuoc/sapa2.jpg)">
 								</div>
 							</div>
-						</div>
-						<div class="item">
-							<div class="wrap">
-								<div class="text">
-									<div class="title">
-										<span>Abu Dhabi - Dubai</span>
+							<div class="item">
+								<div class="wrap">
+									<div class="text">
+										<div class="title">
+											<span>Abu Dhabi - Dubai</span>
+										</div>
+										<div class="top-description">
+											<span>Ngỡ ngàng trước sự hiện đại và hoàng tráng của bảo tàng Lourve</span>
+										</div>
+										<div class="description">
+											<span>Khám phá hành trình Dubai với những trải nghiệm theo chuẩn mực xa hoa tại xứ nghìn lẻ một đêm của các Tiểu vương
+												quốc Ả Rập Thống Nhất U.A.E</span>
+										</div>
+										<a href="tour-nuoc-ngoai-chi-tiet.html" class="button buttonStyle3 datve">
+											<span>Đặt vé</span>
+											<i class="icon-vitravel-arrow-right"></i>
+										</a>
 									</div>
-									<div class="top-description">
-										<span>Ngỡ ngàng trước sự hiện đại và hoàng tráng của bảo tàng Lourve</span>
+									<div class="image" style="background-image: url(Images/nuocNgoai/dubai-banner.jpg)">
 									</div>
-									<div class="description">
-										<span>Khám phá hành trình Dubai với những trải nghiệm theo chuẩn mực xa hoa tại xứ nghìn lẻ một đêm của các Tiểu vương quốc
-											Ả Rập Thống Nhất U.A.E</span>
-									</div>
-									<a href="tour-nuoc-ngoai-chi-tiet.html" class="button buttonStyle3 datve">
-										<span>Đặt vé</span>
-										<i class="icon-vitravel-arrow-right"></i>
-									</a>
-								</div>
-								<div class="image" style="background-image: url(Images/nuocNgoai/dubai-banner.jpg)">
 								</div>
 							</div>
-						</div>
-						<div class="item">
-							<div class="wrap">
-								<div class="text">
-									<div class="title">
-										<span>Đà Lạt</span>
+							<div class="item">
+								<div class="wrap">
+									<div class="text">
+										<div class="title">
+											<span>Đà Lạt</span>
+										</div>
+										<div class="top-description">
+											<span>Thành phố ngàn hoa</span>
+										</div>
+										<div class="description">
+											<span>Tận hưởng khí hậu ôn hòa và dịu mát nơi thành phố vùng cao nguyên - thiên đường của các loại hoa, các loại rau
+												quả tươi bốn mùa và những khu rừng thông xanh mát</span>
+										</div>
+										<a href="tour-nuoc-ngoai-chi-tiet.html" class="button buttonStyle3 datve">
+											<span>Đặt vé</span>
+											<i class="icon-vitravel-arrow-right"></i>
+										</a>
 									</div>
-									<div class="top-description">
-										<span>Thành phố ngàn hoa</span>
+									<div class="image" style="background-image: url(Images/trongNuoc/dalat2.jpg)">
 									</div>
-									<div class="description">
-										<span>Tận hưởng khí hậu ôn hòa và dịu mát nơi thành phố vùng cao nguyên - thiên đường của các loại hoa, các loại rau quả tươi bốn mùa và những khu rừng thông xanh mát</span>
-									</div>
-									<a href="tour-nuoc-ngoai-chi-tiet.html" class="button buttonStyle3 datve">
-										<span>Đặt vé</span>
-										<i class="icon-vitravel-arrow-right"></i>
-									</a>
-								</div>
-								<div class="image" style="background-image: url(Images/trongNuoc/dalat2.jpg)">
 								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 
 			</div>
-
-		</div>
-			<div class="search-home" >
+			<div class="search-home">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="search-bar">
@@ -740,7 +755,7 @@
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/trongNuoc/dalat-tour.jpg" alt="">
 									</a>
@@ -780,7 +795,7 @@
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/trongNuoc/sapa-tour.jpg" alt="">
 									</a>
@@ -820,7 +835,7 @@
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/trongNuoc/sapa-tour-2.jpg" alt="">
 									</a>
@@ -861,7 +876,7 @@
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/trongNuoc/dalat-tour-2.jpg" alt="">
 									</a>
@@ -901,7 +916,7 @@
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/trongNuoc/dalat-tour-3.jpg" alt="">
 									</a>
@@ -941,7 +956,7 @@
 								<div class="image">
 									<a href="tour-trong-nuoc-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/trongNuoc/halong-tour.jpg" alt="">
 									</a>
@@ -1023,7 +1038,7 @@
 								<div class="image">
 									<a href="tour-nuoc-ngoai-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/nuocNgoai/dubai-tour.jpg" alt="">
 									</a>
@@ -1063,7 +1078,7 @@
 								<div class="image">
 									<a href="tour-nuoc-ngoai-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/nuocNgoai/sing-tour.jpg" alt="">
 									</a>
@@ -1103,7 +1118,7 @@
 								<div class="image">
 									<a href="tour-nuoc-ngoai-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/nuocNgoai/sing-tour-3.jpg" alt="">
 									</a>
@@ -1144,7 +1159,7 @@
 								<div class="image">
 									<a href="tour-nuoc-ngoai-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/nuocNgoai/thai-tour.jpg" alt="">
 									</a>
@@ -1184,7 +1199,7 @@
 								<div class="image">
 									<a href="tour-nuoc-ngoai-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/nuocNgoai/universal-tour.jpg" alt="">
 									</a>
@@ -1224,7 +1239,7 @@
 								<div class="image">
 									<a href="tour-nuoc-ngoai-chi-tiet.html">
 										<div class="chitiet">
-											<i class="icon-Vitral-plus"></i>
+											<i class="icon-vitravel-plus"></i>
 										</div>
 										<img class="lazy" src="Images/nuocNgoai/sing-tour-5.jpg" alt="">
 									</a>
@@ -1559,43 +1574,43 @@
 							<div class="container-fluid">
 								<div class="row">
 
-									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+									<div class="col-3 col-sm-3 col-md-3 col-lg-3" >
+										<a class="image-footer" href="Images/gallery/image-gallery – 1.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery – 1.jpg" alt="">
 										</a>
 									</div>
 									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+										<a class="image-footer" href="Images/gallery/image-gallery – 2.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery – 2.jpg" alt="">
 										</a>
 									</div>
 									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+										<a class="image-footer" href="Images/gallery/image-gallery – 3.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery – 3.jpg" alt="">
 										</a>
 									</div>
 									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+										<a class="image-footer" href="Images/gallery/image-gallery – 4.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery – 4.jpg" alt="">
 										</a>
 									</div>
 									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+										<a class="image-footer" href="Images/gallery/image-gallery – 5.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery – 5.jpg" alt="">
 										</a>
 									</div>
 									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+										<a class="image-footer" href="Images/gallery/image-gallery – 6.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery – 6.jpg" alt="">
 										</a>
 									</div>
 									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+										<a class="image-footer" href="Images/gallery/image-gallery – 7.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery – 7.jpg" alt="">
 										</a>
 									</div>
 									<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-										<a href="tour-nuoc-ngoai-chi-tiet.html">
+										<a class="image-footer" href="Images/gallery/image-gallery.jpg" data-fancybox-group="thumb" >
 											<img class="lazy" src="Images/gallery/image-gallery.jpg" alt="">
 										</a>
 									</div>
@@ -1608,7 +1623,7 @@
 						<div class="contain">
 							<div class="title">Facebook</div>
 							<div class="fb-page" data-href="https://www.facebook.com/dulich.vitravel" data-small-header="false" data-adapt-container-width="true"
-							    data-hide-cover="false" data-show-facepile="false">
+							 data-hide-cover="false" data-show-facepile="false">
 								<blockquote cite="https://www.facebook.com/dulich.vitravel" class="fb-xfbml-parse-ignore">
 									<a href="https://www.facebook.com/dulich.vitravel">Vitravel</a>
 								</blockquote>
@@ -1629,7 +1644,7 @@
 
 	<!-- Jquery -->
 	<script src="./js/jquery.min.js" type="text/javascript"></script>
-	
+
 	<!-- Bootstrap -->
 	<script src="./plugin/bootstrap4/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="./js/popper.min.js" type="text/javascript"></script>
@@ -1647,10 +1662,16 @@
 
 	<!-- wow -->
 	<script src="./plugin/wow/dist/wow.min.js" type="text/javascript"></script>
-	
+
+	<!-- Facybox -->
+	<script type="text/javascript" src="plugin/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="plugin/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="plugin/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="plugin/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
 	<!-- Javascript -->
 	<script src="./js/main.js" type="text/javascript"></script>
-	
+
 	<script>
 		var wow = new WOW({
 			boxClass: 'wow', // animated element css class (default is wow)
