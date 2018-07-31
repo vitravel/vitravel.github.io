@@ -54,15 +54,19 @@ $border-radius-box: 8px;
 }
 
 .icon-facbook-icon,
-.icon-messenger-icon {
+.icon-messenger-icon,
+.icon-vitravel-facebook, 
+.icon-vitravel-messenger {
     color: $facebook;
 }
 
-.icon-youtube-icon {
+.icon-youtube-icon,
+.icon-vitravel-youtube {
     color: $youtube;
 }
 
-.icon-google-icon {
+.icon-google-icon,
+.icon-vitravel-google {
     color: $google;
 }
 
