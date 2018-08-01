@@ -91,13 +91,13 @@
 					<span class="arrow"></span>
 					<ul class="sub-menu">
 						<li>
-							<a href="mien-bac">Miền Bắc</a>
+							<a href="tour-mien-bac.html">Miền Bắc</a>
 						</li>
 						<li>
-							<a href="mien-trung">Miền Trung</a>
+							<a href="tour-mien-trung.html">Miền Trung</a>
 						</li>
 						<li>
-							<a href="mien-nam">Miền Nam</a>
+							<a href="tour-mien-nam.html">Miền Nam</a>
 						</li>
 					</ul>
 				</li>
@@ -106,19 +106,19 @@
 					<span class="arrow"></span>
 					<ul class="sub-menu">
 						<li>
-							<a href="chau-a">Châu Á</a>
+							<a href="tour-chau-a.html">Châu Á</a>
 						</li>
 						<li>
-							<a href="chau-au">Châu Âu</a>
+							<a href="tour-chau-au.html">Châu Âu</a>
 						</li>
 						<li>
-							<a href="chau-my">Châu Mỹ</a>
+							<a href="tour-chau-my.html">Châu Mỹ</a>
 						</li>
 						<li>
-							<a href="chau-phi">Châu Phi</a>
+							<a href="tour-chau-phi.html">Châu Phi</a>
 						</li>
 						<li>
-							<a href="chau-dai-duong">Châu Đại Dương</a>
+							<a href="tour-chau-dai-duong.html">Châu Đại Dương</a>
 						</li>
 					</ul>
 				</li>
@@ -176,17 +176,17 @@
 								<li class="active">
 									<a href="index.html">Trang chủ</a>
 								</li>
-								<li class="hasArrow nonelink">
+								<li class="hasArrow">
 									<a href="tour-trong-nuoc.html">Tour trong nước</a>
 									<ul class="sub-menu">
 										<li>
-											<a href="nonemien-bac">Miền Bắc</a>
+											<a href="tour-mien-bac.html">Miền Bắc</a>
 										</li>
 										<li>
-											<a href="nonemien-trung">Miền Trung</a>
+											<a href="tour-mien-trung.html">Miền Trung</a>
 										</li>
 										<li>
-											<a href="nonemien-nam">Miền Nam</a>
+											<a href="tour-mien-nam.html">Miền Nam</a>
 										</li>
 									</ul>
 								</li>
@@ -194,19 +194,19 @@
 									<a href="tour-nuoc-ngoai.html">Tour nước ngoài</a>
 									<ul class="sub-menu">
 										<li>
-											<a href="nonechau-a">Châu Á</a>
+											<a href="tour-chau-a.html">Châu Á</a>
 										</li>
 										<li>
-											<a href="nonechau-au">Châu Âu</a>
+											<a href="tour-chau-au.html">Châu Âu</a>
 										</li>
 										<li>
-											<a href="nonechau-my">Châu Mỹ</a>
+											<a href="tour-chau-my.html">Châu Mỹ</a>
 										</li>
 										<li>
-											<a href="nonechau-phi">Châu Phi</a>
+											<a href="tour-chau-phi.html">Châu Phi</a>
 										</li>
 										<li>
-											<a href="nonechau-dai-duong">Châu Đại Dương</a>
+											<a href="tour-chau-dai-duong.html">Châu Đại Dương</a>
 										</li>
 									</ul>
 
@@ -716,7 +716,10 @@
 
 	</div>
 
-	<!-- Jquery -->
+	<!-- map -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+	<<!-- Jquery -->
 	<script src="./js/jquery.min.js" type="text/javascript"></script>
 
 	<!-- Bootstrap -->
@@ -741,10 +744,7 @@
 	<!-- Javascript -->
 	<script src="./js/main.js" type="text/javascript"></script>
 
-	<!-- map -->
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-	<script>
+	<script type="text/javascript">
 		var markers = [];
 		function initialize() {
 			var mapOptions = {
@@ -1208,34 +1208,20 @@
 			google.maps.event.trigger(markers[id], 'click');
 		}
 
-		setTimeout(function () {
-			$('#verification').find('iframe').attr({
-				'id': 'verification-iframe',
-				'name': 'verification_iframe'
-			})
-
-			$("#verification-iframe").find(".rc-anchor-normal").css('width', '100% !important');
-			$("#verification-iframe").contents().find(".rc-anchor-normal").css('width', '100% !important');
-
-			var wow = new WOW({
-				boxClass: 'wow', // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset: 0, // distance to the element when triggering the animation (default is 0)
-				mobile: true, // trigger animations on mobile devices (default is true)
-				live: true, // act on asynchronously loaded content (default is true)
-				callback: function (box) {
-					// the callback is fired every time an animation is started
-					// the argument that is passed in is the DOM node being animated
-				},
-				scrollContainer: null, // optional scroll container selector, otherwise use window,
-				resetAnimation: true, // reset animation on end (default is true)
-			});
-			wow.init();
-
-			var tpj = jQuery;
-			tpj.noConflict();
+		var wow = new WOW({
+			boxClass: 'wow', // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset: 0, // distance to the element when triggering the animation (default is 0)
+			mobile: true, // trigger animations on mobile devices (default is true)
+			live: true, // act on asynchronously loaded content (default is true)
+			callback: function (box) {
+				// the callback is fired every time an animation is started
+				// the argument that is passed in is the DOM node being animated
+			},
+			scrollContainer: null, // optional scroll container selector, otherwise use window,
+			resetAnimation: true, // reset animation on end (default is true)
 		});
-
+		wow.init();
 	</script>
 
 </body>
