@@ -1,10 +1,10 @@
 // Loadding
-// $(document).ready(function ($) {
-//     $(window).on('load', function () {
-//         $(".loader").fadeOut();
-//     });
-// });
-// $('.loader').delay(3000).fadeOut('slow');
+$(document).ready(function ($) {
+    $(window).on('load', function () {
+        $(".loader").fadeOut();
+    });
+});
+$('.loader').ready().fadeOut('slow');
 
 $(document).ready(function ($) {
     $(".mainMenuMobile .hasArrow").click(function () {
@@ -20,19 +20,11 @@ $(document).ready(function ($) {
     });
 });
 
-// Blur on text banner2 Home
-// $(document).ready(function ($) {
-//     $('.fullWidthBanner .imageSlide .text').hover(
-//         function(){ $('.fullWidthBanner').addClass('blur-image') },
-//         function(){ $('.fullWidthBanner').removeClass('blur-image') }
-//     )
-// });
-
 $(document).ready(function ($) {
     $(".home-slider .imageSlide .text").hover(function () {
-        $('.home-slider .image').css("filter", "blur(0px)");
+        $('.home-slider .image').css({"filter" : "blur(0px)", "transition" : "all 300ms ease-in-out"});
     }, function () {
-        $('.home-slider .image').css("filter", "blur(3px)");
+        $('.home-slider .image').css({"filter" : "blur(3px)", "transition" : "all 300ms ease-in-out"});
     });
 });
 
@@ -183,11 +175,11 @@ $(document).ready(function ($) {
         autoplay: true,
         autoplaySpeed: 3500,
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         arrows: true,
         dots: false,
         focusOnSelect: true,
-        cssEase: 'ease-in-out',
+        cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
         speed: 800,
         draggable: false,
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
@@ -218,12 +210,12 @@ $(document).ready(function ($) {
         autoplay: true,
         autoplaySpeed: 3500,
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         arrows: true,
         dots: false,
         focusOnSelect: true,
-        cssEase: 'ease-in-out',
-        speed: 800,
+        cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+        speed: 1200,
         draggable: false,
         prevArrow: '<span class="arrowSlide2 left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide2 right-arrowSlide icon-vitravel-arrow-right"></span>',
@@ -246,7 +238,7 @@ $(document).ready(function ($) {
     });
 });
 
-// Full width home banner
+// Full width home slide
 $(document).ready(function ($) {
     $('.home-slider .imageSlide').slick({
         autoplay: true,
@@ -256,9 +248,10 @@ $(document).ready(function ($) {
         arrows: true,
         dots: false,
         pauseOnHover: false,
-        cssEase: 'ease-in-out',
+        cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
         draggable: false,
-        speed: 1000,
+        fade: true,
+        speed: 1500,
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide right-arrowSlide icon-vitravel-arrow-right"></span>',
         responsive: [{
@@ -291,8 +284,8 @@ $(document).ready(function ($) {
         slidesToScroll: 1,
         arrows: true,
         dots: false,
-        cssEase: 'ease-in-out',
-        speed: 800,
+        cssEase: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+        speed: 1200,
         draggable: false,
         prevArrow: '<span class="arrowSlide left-arrowSlide icon-vitravel-arrow-left"></span>',
         nextArrow: '<span class="arrowSlide right-arrowSlide icon-vitravel-arrow-right"></span>',
